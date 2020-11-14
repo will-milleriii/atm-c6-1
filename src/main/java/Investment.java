@@ -21,7 +21,7 @@ public class Investment extends Account {
     }
 
     public void printTranHis() {
-        return "hi";
+
     }
 
     public boolean checkIfEmpty(){

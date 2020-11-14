@@ -9,11 +9,15 @@ public class Account {
     }
 
     public void withdraw(Double amount){
+
         this.balance -= amount;
+        this.addTransaction("Withdraw: " + amount);
     }
 
     public void Deposit(Double amount){
+
         this.balance -= amount;
+        this.addTransaction("Deposit: " + amount);
     }
 
     public void Transfer(Object account, Double amount){
