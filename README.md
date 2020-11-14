@@ -24,12 +24,12 @@ Tests should demonstrate proper behavior, and proper handling of misuse (eg. att
   - Check balance
   - **Challenge:** Transfer to another user's account (but not from)
 - Support multiple users
-  - Users have associated accounts
+  - User have associated accounts
   - Can create new user
-  - Users are authenticated with a password (generated or provided on user creation)
+  - User are authenticated with a password (generated or provided on user creation)
   - Can exit a user and enter another user
 - **BONUS** Persistence
-  - Users and accounts remain persistent
+  - User and accounts remain persistent
   - Opportunity for research
 
 
