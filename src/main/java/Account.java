@@ -9,14 +9,28 @@ public class Account {
     }
 
     public void withdraw(Double amount){
+        if (amount > 0 && amount < balance){
+            this.balance -= amount;
+        }else {
+            System.out.println("Insufficient funds.");
+        }
 
+        /*
         this.balance -= amount;
+        if (amount > balance){
+            System.out.println("Insufficient funds.");
+        }*/
         this.addTransaction("Withdraw: " + amount);
     }
 
     public void Deposit(Double amount){
+        if (amount > 0){
+            this.balance += amount;
+        } else {
+            System.out.println("Error. Please enter a valid amount");
+        }
 
-        this.balance -= amount;
+        //this.balance -= amount;
         this.addTransaction("Deposit: " + amount);
     }
 
